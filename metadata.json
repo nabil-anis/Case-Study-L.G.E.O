@@ -1,0 +1,8 @@
+{
+  "name": "Case Study | L.G.E.O",
+  "description": "Lead Gen and Email Outreach system built for Wise Business Plans.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
