@@ -18,15 +18,15 @@ const App: React.FC = () => {
       </div>
       
       {/* Absolute Header (Not anchored, scrolls with page) */}
-      <nav className="absolute top-10 inset-x-0 z-50 flex flex-col items-center gap-6 pointer-events-none px-4">
-        <div className="pointer-events-auto animate-in fade-in slide-in-from-top-4 duration-1000">
-          <div className="glass-dark px-6 md:px-8 py-3 rounded-full flex items-center justify-center border border-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.5)] bg-black/60 backdrop-blur-2xl transition-all hover:border-white/20 hover:scale-[1.02] duration-300">
+      <nav className="absolute top-6 md:top-10 inset-x-0 z-50 flex flex-col items-center gap-4 md:gap-6 pointer-events-none px-4">
+        <div className="pointer-events-auto animate-in fade-in slide-in-from-top-4 duration-1000 w-full max-w-[90%] md:max-w-none flex justify-center">
+          <div className="glass-dark px-4 md:px-8 py-2 md:py-3 rounded-full flex items-center justify-center border border-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.5)] bg-black/60 backdrop-blur-2xl transition-all hover:border-white/20 hover:scale-[1.02] duration-300">
              <div className="flex flex-col md:flex-row md:items-center gap-1 md:gap-3 text-center">
-               <span className="font-outfit font-black text-sm md:text-lg tracking-[0.2em] text-white uppercase whitespace-nowrap">
+               <span className="font-outfit font-black text-xs md:text-lg tracking-[0.2em] text-white uppercase whitespace-nowrap">
                  L.G.E.O
                </span>
                <span className="hidden md:inline text-white/20">|</span>
-               <span className="font-outfit font-medium text-[10px] md:text-xs tracking-[0.1em] text-gray-400 uppercase whitespace-nowrap">
+               <span className="font-outfit font-medium text-[9px] md:text-xs tracking-[0.1em] text-gray-400 uppercase whitespace-nowrap">
                  Made for <span className="text-blue-400 font-bold">Wise Business Plans</span>
                </span>
              </div>
@@ -58,9 +58,9 @@ const App: React.FC = () => {
       </nav>
 
       {/* Main Content Stream */}
-      <main className="pt-64 pb-20 space-y-24 md:space-y-32">
+      <main className="pt-48 md:pt-64 pb-20 space-y-16 md:space-y-32">
         
-        <section id="content-view" className="max-w-7xl mx-auto px-4 md:px-6">
+        <section id="content-view" className="max-w-7xl mx-auto px-4 md:px-6 w-full">
           {viewMode === 'visuals' ? (
             <Dashboard />
           ) : (
@@ -69,7 +69,7 @@ const App: React.FC = () => {
         </section>
 
         {/* Section 2: Tech Stack / Footer */}
-        <section id="about" className="max-w-7xl mx-auto px-4 md:px-6">
+        <section id="about" className="max-w-7xl mx-auto px-4 md:px-6 w-full">
           <Settings />
         </section>
 
